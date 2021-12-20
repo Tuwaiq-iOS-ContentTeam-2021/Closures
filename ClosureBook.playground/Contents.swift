@@ -21,9 +21,8 @@ for i in allBooks {
 
 
 
-let specificBook = allBooks.contains {$0.auther == "Ali"}
-print(specificBook)  // output -> true
+let specificBook = allBooks.filter {$0.auther == "Ali"}
+print(specificBook)  // output -> [__lldb_expr_24.Book(title: "ABCD", auther: "Ali", radingAge: 14, pageCount: 200)]
 
 
 
-// I used for and if conditions because .contains return bool
