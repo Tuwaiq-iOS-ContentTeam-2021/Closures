@@ -15,7 +15,7 @@ let allBooks = [ book1 , book2 , book3 ]
 let sortedBooks = allBooks.sorted{$0.radingAge <= $1.radingAge }
 
 // closure practice
-let autherName = "huda"
+let autherName = "Huda"
 let hudasBooks = allBooks.filter { $0.auther.lowercased() == autherName.lowercased()}
 
 print(hudasBooks)
