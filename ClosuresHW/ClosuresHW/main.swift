@@ -23,4 +23,4 @@ let allBooks = [ book1 , book2 , book3 ]
 let sortedBooks = allBooks.sorted{$0.radingAge <= $1.radingAge }
 
 let filteredBook = allBooks.filter{$0.auther.lowercased() == "Huda".lowercased()}
-print(filteredBook)
+filteredBook.forEach{print($0)}
