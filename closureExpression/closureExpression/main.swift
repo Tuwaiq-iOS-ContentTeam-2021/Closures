@@ -83,4 +83,7 @@ let Books = [ book1 , book2 , book3 ]
     let sortedBooks = Books.sorted{$0.radingAge <= $1.radingAge }
 print(sortedBooks)
  
+print("==========================")
 
+let jamesBook = Books.filter{$0.auther == "james"}
+print(jamesBook)
